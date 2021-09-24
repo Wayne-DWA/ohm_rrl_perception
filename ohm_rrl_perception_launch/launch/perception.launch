@@ -1,7 +1,7 @@
 <launch>
 
-  <arg name="with_camera" default="false"/>
-  <arg name="with_viewer" default="false"/>
+  <arg name="with_camera" default="true"/>
+  <arg name="with_viewer" default="true"/>
   
   
   <!-- start camera -->

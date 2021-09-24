@@ -1,7 +1,7 @@
 <launch>
 
-   <arg name="with_camera" default="false"/>
-   <arg name="with_viewer" default="false"/>
+   <arg name="with_camera" default="true"/>
+   <arg name="with_viewer" default="true"/>
    
    <arg name="input_image_topic" default="image_raw"/>
    <arg name="img_haz_topic"     default="img_hazmats"/>

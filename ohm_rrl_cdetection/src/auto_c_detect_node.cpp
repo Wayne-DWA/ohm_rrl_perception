@@ -308,27 +308,27 @@ void thresh_callback(int, void*)
 
 //TODO: Remove once vector based approach for c template has been tested
   ////  Mat canny_thermal;
-//  Mat canny_unten_fixed;
-//  Mat canny_links_fixed;
-//  Mat canny_rechts_fixed;
-//  Mat canny_oben_fixed;
-//  Mat canny_los_fixed;
-//  Mat canny_lus_fixed;
-//  Mat canny_ros_fixed;
-//  Mat canny_rus_fixed;
+ Mat canny_unten_fixed;
+ Mat canny_links_fixed;
+ Mat canny_rechts_fixed;
+ Mat canny_oben_fixed;
+ Mat canny_los_fixed;
+ Mat canny_lus_fixed;
+ Mat canny_ros_fixed;
+ Mat canny_rus_fixed;
 
   vector<vector<Point> > contours;
 
 //TODO: Remove once vector based approach for c template has been tested
   ////  vector<vector<Point> > contours_thermal;
-//  vector<vector<Point> > contours_unten_fixed;
-//  vector<vector<Point> > contours_links_fixed;
-//  vector<vector<Point> > contours_rechts_fixed;
-//  vector<vector<Point> > contours_oben_fixed;
-//  vector<vector<Point> > contours_los_fixed;
-//  vector<vector<Point> > contours_lus_fixed;
-//  vector<vector<Point> > contours_ros_fixed;
-//  vector<vector<Point> > contours_rus_fixed;
+ vector<vector<Point> > contours_unten_fixed;
+ vector<vector<Point> > contours_links_fixed;
+ vector<vector<Point> > contours_rechts_fixed;
+ vector<vector<Point> > contours_oben_fixed;
+ vector<vector<Point> > contours_los_fixed;
+ vector<vector<Point> > contours_lus_fixed;
+ vector<vector<Point> > contours_ros_fixed;
+ vector<vector<Point> > contours_rus_fixed;
 
   vector<Vec4i> hierarchy;
 
@@ -346,34 +346,34 @@ void thresh_callback(int, void*)
 
 // TODO: Remove once vector method is tested
 
-//  //Reference image
-//  //  Detect edges using canny
-//  Canny(src_unten_gray, canny_unten_fixed, thresh, thresh * 2, 3);
-//  /// Find contours
-//  findContours(canny_unten_fixed, contours_unten_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-//
-//  Canny(src_links_gray, canny_links_fixed, thresh, thresh * 2, 3);
-//  //  std::cout << "before find contours " << std::endl;
-//  // Find contours
-//  findContours(canny_links_fixed, contours_links_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-//
-////  Canny(src_rechts_gray, canny_rechts_fixed, thresh, thresh*2,3);
-////  findContours(canny_rechts_fixed, contours_rechts_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0,0));
-//
-//  Canny(src_oben_gray, canny_oben_fixed, thresh, thresh * 2, 3);
-//  findContours(canny_oben_fixed, contours_oben_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-//
-//  Canny(src_los_gray, canny_los_fixed, thresh, thresh * 2, 3);
-//  findContours(canny_los_fixed, contours_los_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-//
-//  Canny(src_lus_gray, canny_lus_fixed, thresh, thresh * 2, 3);
-//  findContours(canny_lus_fixed, contours_lus_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-//
-//  Canny(src_ros_gray, canny_ros_fixed, thresh, thresh * 2, 3);
-//  findContours(canny_ros_fixed, contours_ros_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
-//
-//  Canny(src_rus_gray, canny_rus_fixed, thresh, thresh * 2, 3);
-//  findContours(canny_rus_fixed, contours_rus_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+ //Reference image
+ //  Detect edges using canny
+ Canny(src_unten_gray, canny_unten_fixed, thresh, thresh * 2, 3);
+ /// Find contours
+ findContours(canny_unten_fixed, contours_unten_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+
+ Canny(src_links_gray, canny_links_fixed, thresh, thresh * 2, 3);
+ //  std::cout << "before find contours " << std::endl;
+ // Find contours
+ findContours(canny_links_fixed, contours_links_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+
+//  Canny(src_rechts_gray, canny_rechts_fixed, thresh, thresh*2,3);
+//  findContours(canny_rechts_fixed, contours_rechts_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0,0));
+
+ Canny(src_oben_gray, canny_oben_fixed, thresh, thresh * 2, 3);
+ findContours(canny_oben_fixed, contours_oben_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+
+ Canny(src_los_gray, canny_los_fixed, thresh, thresh * 2, 3);
+ findContours(canny_los_fixed, contours_los_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+
+ Canny(src_lus_gray, canny_lus_fixed, thresh, thresh * 2, 3);
+ findContours(canny_lus_fixed, contours_lus_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+
+ Canny(src_ros_gray, canny_ros_fixed, thresh, thresh * 2, 3);
+ findContours(canny_ros_fixed, contours_ros_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+
+ Canny(src_rus_gray, canny_rus_fixed, thresh, thresh * 2, 3);
+ findContours(canny_rus_fixed, contours_rus_fixed, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
 
   //RGB Image
   Canny(img_gray, canny_output, thresh, thresh * 2, 3);
@@ -392,70 +392,70 @@ void thresh_callback(int, void*)
 
 // TODO: Remove one vector approach for c templates has been tested
 //
-//  //Moments C unten
-//  vector<Moments> mu_u(contours_unten_fixed.size());
-//  for(unsigned int i = 0; i < contours_unten_fixed.size(); i++)
-//  {
-//    mu_u[i] = cv::moments(contours_unten_fixed[i], false);
-//
-//  }
-//
-//
-//  //Moments C links
-//  vector<Moments> mu_l(contours_links_fixed.size());
-//  for(unsigned int i = 0; i < contours_links_fixed.size(); i++)
-//  {
-//    mu_l[i] = cv::moments(contours_links_fixed[i], false);
-//
-//  }
-//
-//  //Moments C links
-//  vector<Moments> mu_r(contours_rechts_fixed.size());
-//  for(unsigned int i = 0; i < contours_rechts_fixed.size(); i++)
-//  {
-//    mu_r[i] = cv::moments(contours_rechts_fixed[i], false);
-//
-//  }
-//
-//  //Moments C oben
-//  vector<Moments> mu_o(contours_oben_fixed.size());
-//  for(unsigned int i = 0; i < contours_oben_fixed.size(); i++)
-//  {
-//    mu_o[i] = cv::moments(contours_oben_fixed[i], false);
-//
-//  }
-//
-//  //Moments C links oben schraeg
-//  vector<Moments> mu_los(contours_los_fixed.size());
-//  for(unsigned int i = 0; i < contours_los_fixed.size(); i++)
-//  {
-//    mu_los[i] = cv::moments(contours_los_fixed[i], false);
-//
-//  }
-//
-//  //Moments C links unten schraeg
-//  vector<Moments> mu_lus(contours_lus_fixed.size());
-//  for(unsigned int i = 0; i < contours_lus_fixed.size(); i++)
-//  {
-//    mu_lus[i] = cv::moments(contours_lus_fixed[i], false);
-//
-//  }
-//
-//  //Moments C recht oben schraeg
-//  vector<Moments> mu_ros(contours_ros_fixed.size());
-//  for(unsigned int i = 0; i < contours_ros_fixed.size(); i++)
-//  {
-//    mu_ros[i] = cv::moments(contours_ros_fixed[i], false);
-//
-//  }
-//
-//  //Moments C recht oben schraeg
-//  vector<Moments> mu_rus(contours_rus_fixed.size());
-//  for(unsigned int i = 0; i < contours_rus_fixed.size(); i++)
-//  {
-//    mu_rus[i] = cv::moments(contours_rus_fixed[i], false);
-//
-//  }
+ //Moments C unten
+ vector<Moments> mu_u(contours_unten_fixed.size());
+ for(unsigned int i = 0; i < contours_unten_fixed.size(); i++)
+ {
+   mu_u[i] = cv::moments(contours_unten_fixed[i], false);
+
+ }
+
+
+ //Moments C links
+ vector<Moments> mu_l(contours_links_fixed.size());
+ for(unsigned int i = 0; i < contours_links_fixed.size(); i++)
+ {
+   mu_l[i] = cv::moments(contours_links_fixed[i], false);
+
+ }
+
+ //Moments C links
+ vector<Moments> mu_r(contours_rechts_fixed.size());
+ for(unsigned int i = 0; i < contours_rechts_fixed.size(); i++)
+ {
+   mu_r[i] = cv::moments(contours_rechts_fixed[i], false);
+
+ }
+
+ //Moments C oben
+ vector<Moments> mu_o(contours_oben_fixed.size());
+ for(unsigned int i = 0; i < contours_oben_fixed.size(); i++)
+ {
+   mu_o[i] = cv::moments(contours_oben_fixed[i], false);
+
+ }
+
+ //Moments C links oben schraeg
+ vector<Moments> mu_los(contours_los_fixed.size());
+ for(unsigned int i = 0; i < contours_los_fixed.size(); i++)
+ {
+   mu_los[i] = cv::moments(contours_los_fixed[i], false);
+
+ }
+
+ //Moments C links unten schraeg
+ vector<Moments> mu_lus(contours_lus_fixed.size());
+ for(unsigned int i = 0; i < contours_lus_fixed.size(); i++)
+ {
+   mu_lus[i] = cv::moments(contours_lus_fixed[i], false);
+
+ }
+
+ //Moments C recht oben schraeg
+ vector<Moments> mu_ros(contours_ros_fixed.size());
+ for(unsigned int i = 0; i < contours_ros_fixed.size(); i++)
+ {
+   mu_ros[i] = cv::moments(contours_ros_fixed[i], false);
+
+ }
+
+ //Moments C recht oben schraeg
+ vector<Moments> mu_rus(contours_rus_fixed.size());
+ for(unsigned int i = 0; i < contours_rus_fixed.size(); i++)
+ {
+   mu_rus[i] = cv::moments(contours_rus_fixed[i], false);
+
+ }
 
   //Moments incoming image camera
   vector<Moments> mu(contours.size());
